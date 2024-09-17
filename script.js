@@ -18,7 +18,7 @@ async function gotlocation(position) {
     position.coords.latitude,
     position.coords.longitude
   );
-  temp.innerHTML = result.current.temp_c;
+  temp.innerHTML = result.current.temp_c+`°C`;
   city.innerHTML = result.location.name;
   description.innerHTML = result.current.condition.text;
   wind.innerHTML = `Wind Speed :` + result.current.wind_kph + ` km/h`;
